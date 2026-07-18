@@ -1,0 +1,64 @@
+#title {
+    color: darkblue;
+    text-align: center;
+}
+body{
+    background-color: aqua;
+}
+.student-card{
+    padding: 30px;
+    border: 3px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.student-name{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.description{
+    color: green;
+}
+.course::before {
+    content: "🎓 ";
+    font-size: 30px;
+}
+.course::after {
+    content: " ✔ Certified";
+    color: green;
+}
+button:hover {
+    background-color: blue;
+    color: white;
+}
+.description::first-letter {
+    font-size: 35px;
+    font-weight: bold;
+}
+.student-card::after{
+    content: "🥇 Topper";
+    background-color: rgb(5, 240, 87);
+    padding: 10px;
+    border-radius: 10px;
+}
+.student1-card{
+    padding: 30px;
+    border: 3px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(7, 236, 57);
+}
+.student2-card{
+    padding: 30px;
+    border: 3px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(245, 233, 7);
+}
+.student3-card{
+    padding: 30px;
+    border: 3px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(245, 7, 213);
+}
