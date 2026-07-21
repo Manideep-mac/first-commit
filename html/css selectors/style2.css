@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#6ea0f6;
+}
+
+/* Header */
+
+.header{
+    width:100%;
+    height:80px;
+    background:#f2fb01;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size:38px;
+    font-weight:bold;
+    color:#1f3c88;
+}
+
+.search{
+    width:500px;
+}
+
+.search input{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+    border:2px solid #ccc;
+    border-radius:6px;
+    outline:none;
+}
+
+.nav{
+    display:flex;
+    gap:30px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#333;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.nav a:hover{
+    color:#1f3c88;
+}
+
+/* Products */
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin:35px;
+}
+
+/* Product Card */
+
+.card{
+    width:30%;
+    min-width:280px;
+    background:#ffffff;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    border:1px solid #ccc;
+    box-shadow:2px 2px 8px rgba(0,0,0,.2);
+}
+
+/* Product Name */
+
+.product-name{
+    font-size:24px;
+    color:#222;
+}
+
+.product-name::before{
+    content:"🛒 ";
+    font-size:28px;
+}
+
+/* Offer */
+
+.offer{
+    margin:18px 0;
+    background:#f4f4f4;
+    padding:12px;
+    border-radius:6px;
+}
+
+.offer .price{
+    color:#d62828;
+    font-size:26px;
+    font-weight:bold;
+}
+
+/* Hot Deal */
+
+.card:first-child::before{
+    content:"🔥 Hot Deal";
+    display:block;
+    color:red;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* Limited Stock */
+
+.card:last-child::after{
+    content:"⚠ Limited Stock";
+    display:block;
+    color:orange;
+    font-weight:bold;
+    margin-top:12px;
+}
+
+/* Alternate Cards */
+
+.card:nth-child(even){
+    background:#e3f2fd;
+}
+
+.card:nth-child(odd){
+    background:#ffffff;
+}
+
+/* Discount */
+
+.discount::after{
+    content:" 30% OFF";
+    background:#198754;
+    color:white;
+    padding:4px 8px;
+    border-radius:5px;
+    font-size:12px;
+    margin-left:8px;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:#198754;
+}
